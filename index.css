@@ -1,0 +1,249 @@
+*{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+}
+body{
+    background-color: rgb(14, 14, 105);
+}
+.maindiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nav{
+    display: flex;
+    padding: 30px;
+   justify-content: space-around;
+   color: white;
+}
+
+.nav1{
+    padding: 10px;
+    font-size: 1em;
+}
+ul{
+    display: flex;
+}
+li{
+    font-size: 1em;
+    list-style-type:none;
+    padding: 10px;
+}
+.belownav{
+display: flex;
+ justify-content: center; 
+gap: 300px;
+color: white;
+
+}
+.box1{
+width: 18vw;
+}
+.box2{
+    border:1px solid white;
+    background-color: white;
+  padding: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ border-radius: 1px solid white;
+    }
+.hr{
+    width :100px;
+    height: 0.1px;
+}
+.hrdv{
+    display: flex;
+    padding: 10px;
+}
+.email{
+    width: 240px;
+    text-align: center;
+    height: 40px;
+    border-radius: 20px;
+}
+.password{
+    width: 240px;
+    text-align: center;
+    height: 40px;
+    border-radius: 20px;
+}
+.btn1{
+    padding: 10px;
+    width: 240px;
+    color: white;
+    background-color: rgb(8, 8, 170);
+    border-radius: 20px;
+    border: 2px solid rgb(8,8,170);
+}
+.btn2{
+    padding: 10px;
+    width: 240px;
+    color: white;
+    background-color: rgb(52, 166, 211);
+    border: 2px solid rgb(52, 166, 211);
+    border-radius: 20px;
+}
+.h2signup{
+    color: rgb(4, 4, 48);
+    text-align: center;
+    padding-bottom: 15px;
+}
+.or{
+    color: rgb(4, 4, 48);
+}
+hr{
+   margin-top: 10px;
+}
+.hr1{
+display: none;
+}
+.agree{
+color: grey;
+}
+.ov{
+    color: grey;
+}
+.singin{
+    color: #57ba6e;
+}
+.line{
+    color: grey;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.9em;
+}
+.para{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: medium;
+}
+.learn{
+    background-color:hsl(337, 91%, 48%);
+    text-align: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 20px;
+}
+.purchase{
+background-color: hsl(337, 91%, 48%);
+padding: 8px;
+width: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 20px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+label{
+    position: relative;
+}
+label::before{
+    content: "";
+    background:url('./checkbox.jpg');
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: -15px;
+    transform: scale(0) rotateZ(180deg);
+    transition: all 4.s cubic-bezier(0.54,0.01,0,1.49);
+}
+input[type="checkbox"]:checked+label::before{
+    transform: scale(1) rotateZ(0deg);
+}
+label::after{
+content:"";
+border: 2px solid #57ba6e;
+width: 16px;
+height: 16px;
+position: absolute;
+ left: -15px;
+}
+
+li:hover{
+    color: black;
+    background-color: #57ba6e;
+    border-radius: 20px;
+       }
+       li:active{
+        color:blue;
+     background-color: none;
+       }
+@media only screen and (min-width:300px ) and ( max-width: 600px){
+    .nav{
+display: flex;
+flex-direction: column;
+    }
+    .nav1{
+        display: none;
+    }
+    ul{
+        display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  li{
+        text-align: center;
+    }
+    .hr1{
+        display: block;
+    }
+   
+    .belownav{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+    }
+    .box1{
+        text-align: center;
+        width: 90vw;
+        }
+        .box2{
+          position: relative;
+          left: 50%;
+          transform: translate(-50%,0%);
+          width: 250px;
+          padding: 10px;
+        }
+        form {
+            display: flex;
+          
+            padding: 0px;
+            flex-direction: column;
+            
+         border-radius: 1px solid white;
+            }
+        .maindiv{
+           border:10px solid black
+        }
+        .purchase{
+           
+           position: relative;
+           left: 48%;
+           top: 0%;
+           transform: translate(-40%,0%);
+            margin-top:10px ;
+            }
+            .learn:hover{
+                background-color: #57ba6e;
+            }
+    .learn{
+        position: relative;
+        left: 50%;
+        top: 0%;
+        transform: translate(-40%,0%);
+        margin-bottom: 20px;
+    }
+}
